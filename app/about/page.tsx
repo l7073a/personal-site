@@ -1,10 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-slate-50 flex flex-col">
-      {/* Top navigation */}
+      {/* Top navigation (same as Home) */}
       <nav className="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0">
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
           <span className="font-semibold">David Piegaro</span>
@@ -22,23 +21,14 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Page content */}
-      <section className="flex-1 flex flex-col items-center justify-center gap-6 px-4">
-        <div className="text-center space-y-2">
-          <h1 className="text-8xl font-semibold">Hi, I&apos;m David 👋</h1>
-          <p className="max-w-xl text-center text-slate-300">
-            This is my first personal site built with Next.js, TypeScript, Tailwind, Git, and GitHub.
-            I&apos;m using it to learn my new Mac dev setup and modern web tools.
-          </p>
-        </div>
-
-        <Image
-          src="/david.jpg"
-          alt="David Piegaro"
-          width={200}
-          height={200}
-          className="rounded-full object-cover"
-        />
+      {/* About content */}
+      <section className="flex-1 flex flex-col items-center justify-center gap-4 px-4">
+        <h1 className="text-3xl font-semibold">About Me</h1>
+        <p className="max-w-xl text-center text-slate-300">
+          I&apos;m David — currently experimenting with coding, AI tools, and building things like Bubbly
+          Magic and this little personal site. This page exists mainly so I can learn how to make
+          multiple routes in Next.js.
+        </p>
       </section>
     </main>
   );
